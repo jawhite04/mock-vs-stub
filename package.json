@@ -5,7 +5,7 @@
   "main": "src/performer.js",
   "type": "module",
   "scripts": {
-    "format": "prettier -w src/**/*.js",
+    "format": "prettier -w {src,tests}/**/*.js",
     "test": "npm run test:unit",
     "test:unit": "jest -c tests/unit/jest.config.js"
   },
