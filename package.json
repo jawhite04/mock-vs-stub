@@ -2,7 +2,8 @@
   "name": "mock-vs-stub",
   "version": "1.0.0",
   "description": "Faffin' about",
-  "main": "index.js",
+  "main": "src/performer.js",
+  "type": "module",
   "scripts": {
     "format": "prettier -w src/**/*.js",
     "test": "npm run test:unit",
