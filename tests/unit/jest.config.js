@@ -1,10 +1,10 @@
 const config = {
-  testEnvironment: "node",
-  testMatch: ["**/*.spec.js"],
+  testEnvironment: 'node',
+  testMatch: ['**/*.spec.js'],
   clearMocks: true,
   collectCoverage: true,
-  collectCoverageFrom: ["./src/**/*.js"],
-  coverageDirectory: "coverage",
+  collectCoverageFrom: ['./src/**/*.js'],
+  coverageDirectory: 'coverage',
   coverageThreshold: {
     global: {
       branches: 100,
@@ -14,7 +14,7 @@ const config = {
     },
   },
   moduleNameMapper: {
-    "^@/(.*)$": "<rootDir>$1",
+    '^@/(.*)$': '<rootDir>$1',
   },
 };
 
