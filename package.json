@@ -1,0 +1,22 @@
+{
+  "name": "mock-vs-stub",
+  "version": "1.0.0",
+  "description": "Faffin' about",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier -w src/**/*.js",
+    "test": "npm run test:unit",
+    "test:unit": "jest -c tests/unit/jest.config.js"
+  },
+  "author": "Chris Godsey, John White",
+  "license": "Unlicense",
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.596.0",
+    "@middy/core": "5.4.0",
+    "aws-sdk": "2.1641.0"
+  },
+  "devDependencies": {
+    "jest": "29.7.0",
+    "prettier": "3.3.2"
+  }
+}
