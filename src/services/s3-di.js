@@ -1,4 +1,4 @@
-import { S3Client, GetObjectCommand, ListObjectsCommand } from '@aws-sdk/client-s3';
+const { S3Client, GetObjectCommand, ListObjectsCommand } = require('@aws-sdk/client-s3');
 
 const getClient = (region = 'us-east-1') => new S3Client({ region });
 
@@ -14,4 +14,4 @@ const getObject = async (Client, bucketName, objectName) => {
   return response;
 };
 
-export { getClient, listObjects, getObject };
+module.exports = { getClient, listObjects, getObject };

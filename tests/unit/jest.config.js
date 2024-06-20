@@ -1,6 +1,4 @@
-const config = {
-  testEnvironment: 'node',
-  testMatch: ['**/*.spec.js'],
+module.exports = {
   clearMocks: true,
   collectCoverage: true,
   collectCoverageFrom: ['./src/**/*.js'],
@@ -16,6 +14,6 @@ const config = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>$1',
   },
+  testEnvironment: 'node',
+  testMatch: ['**/*.spec.js'],
 };
-
-module.exports = config;

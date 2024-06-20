@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Faffin' about",
   "main": "src/performer.js",
-  "type": "module",
   "scripts": {
     "format": "prettier -w {src,tests}/**/*.js",
     "test": "npm run test:unit",
