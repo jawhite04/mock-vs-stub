@@ -22,6 +22,8 @@ describe('src/services/s3-coupled.js', () => {
       // assert
       expect(response).toEqual(s3Objects);
 
+      expect(mockS3.S3Client).toHaveBeenCalledTimes(1);
+
       expect(mockS3.ListObjectsCommand).toHaveBeenCalledTimes(1);
       expect(mockS3.ListObjectsCommand).toHaveBeenCalledWith({ Bucket: bucketName });
 
@@ -43,6 +45,8 @@ describe('src/services/s3-coupled.js', () => {
 
       // assert
       expect(response).toEqual(s3Objects);
+
+      expect(mockS3.S3Client).toHaveBeenCalledTimes(1);
 
       expect(mockS3.GetObjectCommand).toHaveBeenCalledTimes(1);
       expect(mockS3.GetObjectCommand).toHaveBeenCalledWith({ Bucket: bucketName, Key: fileName });
