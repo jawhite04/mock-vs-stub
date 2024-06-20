@@ -26,7 +26,7 @@ describe('src/performer.js', () => {
   describe('performDi', () => {
     const mockClient = jest.fn();
     const mockService = {
-      getClient: () => mockClient,
+      getClient: jest.fn(() => mockClient),
       listObjects: jest.fn(),
     };
     jest.mock('../../../src/services/s3-di', () => mockService);

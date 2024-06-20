@@ -14,6 +14,7 @@ module.exports = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>$1',
   },
+  rootDir: '../../',
   testEnvironment: 'node',
   testMatch: ['**/*.spec.js'],
 };

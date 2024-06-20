@@ -5,7 +5,7 @@ const getClient = (region = 'us-east-1') => new S3Client({ region });
 const listObjects = async (bucketName) => {
   const client = getClient();
   const command = new ListObjectsCommand({ Bucket: bucketName });
-  const response = await Client.send(command);
+  const response = await client.send(command);
   return response;
 };
 
